@@ -1,0 +1,29 @@
+<html>
+   <head>
+   <style>
+   table, th, td {
+   border: 1px solid black;
+   border-collapse: collapse;}
+   th, td {padding: 15px;}
+   </style>
+   </head>
+   <body>
+   <h1>The columns in the uploaded csv are:</h1>
+   <table>
+      <tr>
+            <th>Column Name</th>
+            <th>Data Type</th>
+      </tr>
+      {% for i in listolist:%}
+      <tr>
+         <td>{{i[0]}}</td>
+         <td>{{i[1]}}</td>
+      </tr>
+         {% endfor %}
+   </table>
+   <h3>If evrything is ok, click below:</h3>
+   <form action="/tgt_select">
+    <input type="submit" value="OK" />
+   </form>
+   </body>
+</html>

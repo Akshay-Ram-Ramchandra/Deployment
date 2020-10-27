@@ -1,0 +1,12 @@
+<html>
+   <body>
+   <h1>Welcome to <img src="{{url_for('static', filename='auto_ric.png')}}" align="middle" width="50" height="50"/>-ai</h1>
+   <h2>A project by Akshay and Shyam</h2>
+   <h3>Upload a csv to get assessed!</h3>
+      <form action = "/upload" method = "POST"
+            enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>   
+   </body>
+</html>

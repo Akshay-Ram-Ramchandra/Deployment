@@ -1,0 +1,14 @@
+<<html>
+   <body>
+   <h1>Select the target Column:</h1>
+      <form name="myForm" action="/display_tgt" method="post">
+      <p>
+         {% for i in cols: %}
+
+      <input type="radio" name="options" value='{{i}}' id="option1">{{i}}<br>
+         {% endfor %}
+      </p>
+      <p><input type=submit value=Next></p>
+      </form>
+   </body>
+</html>

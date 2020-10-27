@@ -1,0 +1,12 @@
+<html>
+   <body>
+   <h1>The Target Column is - {{ option }}</h1>
+   <h2>It is a floating point value, and hence this is a regression problem !</h2>
+   <h2>i.e we are looking to predict a continuous value</h2>
+      <form name="myForm" action="/algo" method="post">
+      <input type="radio" name="options" value='Linear Regression' id="option1">LinearRegression<br>
+      <input type="radio" name="options" value='SVR' id="option1">SupportVectorRegression<br>
+         <input type = "submit"/>
+      </form>   
+   </body>
+</html>
